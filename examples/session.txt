@@ -1,0 +1,2 @@
+joons-mcp-audit-trail append audit.jsonl --type tool.call --data examples/event.json --time 2026-01-01T00:00:00Z
+joons-mcp-audit-trail verify audit.jsonl

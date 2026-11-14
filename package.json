@@ -1,0 +1,52 @@
+{
+  "name": "joons-mcp-audit-trail",
+  "version": "0.1.0",
+  "description": "Append-only, tamper-evident audit log for AI-agent and MCP tool activity: a hash chain with optional HMAC keys and anchors. Offline CLI and library, no dependencies.",
+  "type": "module",
+  "bin": {
+    "joons-mcp-audit-trail": "./bin/joons-mcp-audit-trail.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "examples",
+    "README.md",
+    "README.ko.md",
+    "ARCHITECTURE.md",
+    "SECURITY.md",
+    "LIMITATIONS.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbdefault/joons-mcp-audit-trail.git"
+  },
+  "keywords": [
+    "audit",
+    "audit-log",
+    "audit-trail",
+    "tamper-evident",
+    "hash-chain",
+    "hmac",
+    "mcp",
+    "ai-agent",
+    "jsonl",
+    "cli"
+  ],
+  "bugs": "https://github.com/dbdefault/joons-mcp-audit-trail",
+  "homepage": "https://github.com/dbdefault/joons-mcp-audit-trail",
+  "scripts": {
+    "test": "node --test",
+    "test:long": "node scripts/run-long-tests.mjs"
+  }
+}
