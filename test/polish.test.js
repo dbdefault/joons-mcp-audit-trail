@@ -378,6 +378,7 @@ test('the real show command applies the same exact rule: total bytes cap - 1, ca
 
 test('anchor and export refuse --out equal to a lock path, even with --force; held locks stay', async (t) => {
   const dir = tempDir(t);
+  await fs.mkdir(join(dir, 'x')); // POSIX resolves 'x/..' only when 'x' exists
   const log = join(dir, 'log.jsonl');
   expectOk(cli(['append', log, '--type', 'a']));
   const st = await fs.stat(log, { bigint: true });
